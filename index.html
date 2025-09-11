@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Vicent Martínez Yerves">
+  <title>Mi Porfolio - Vicent MY</title>
+  <link rel="icon" href="icon/svg/bash-plain.svg">
+  <link href="https://fonts.googleapis.com/css?family=Alexandria" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- ===== Header ===== -->
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="avatar" aria-hidden="true">DM</div>
+        <div>
+          <div class="title">VicentMY</div>
+          <div style="color: var(--muted); font-size: 13px;">Desarrollador DAM</div>
+        </div>
+      </div>
+
+      <input id="nav-toggle" class="nav-toggle" type="checkbox" aria-label="Abrir menú">
+
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span class="icon" style="background-image: var(--menu-icon);"></span>
+      </label>
+
+      <nav id="nav-menu" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#tecnologias">Tecnologías</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <div>
+        <button id="toggle-theme" class="btn">
+          <span class="icon" style="background-image: var(--theme-icon);"></span>
+        </button>
+      </div>
+      <div>
+        <a class="btn btn--primary" href="/res/CV Vicent Martínez Yerves.pdf" target="_blank">
+          <span class="icon" style="background-image: var(--pdf-icon);"></span>
+          CV
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Hero / Sobre mí ===== -->
+  <section class="hero">
+    <div class="container">
+      <img class="photo" src="img/foto-propia.webp" alt="Vicent Martínez">
+      <span class="badge">Disponible para trabajar / Junior</span>
+      <h1>Hola, soy <span style="color: var(--brand);">Vicent</span>.</h1>
+      <p id="sobre-mi">Soy un desarrollador de Aplicaciones Multiplataforma con pasión por aprender algo nuevo. Me gusta crear interfaces limpias y resolver problemas con código. Busco oportunidades para seguir aprendiendo y aportar valor en proyectos reales.</p>
+    </div>
+  </section>
+
+  <!-- ===== Proyectos ===== -->
+  <section id="proyectos">
+    <div class="container">
+      <h2 class="section-title">Proyectos</h2>
+      <p class="section-lead">Una selección de trabajos recientes. En cada tarjeta se incluye las tecnologías utilizadas y el repositorio en GitHub.</p>
+      <div class="grid">
+
+        <!-- Proyecto 1 -->
+        <article class="card">
+          <div class="card-media">
+            <img src="img/aemet-fx-(preview).webp" alt="Aemet FX app preview">
+          </div>
+          <div class="card-body">
+            <h3>Aemet FX</h3>
+            <p>Aplicación del tiempo hecha con Java FX usando datos meteorológicos conseguidos de aemet.es en ficheros xml.</p>
+            <div class="chips" aria-label="Tecnologías usadas">
+              <span class="chip">
+                <span class="icon" style="background-image: var(--java-icon);"></span>
+                Java
+              </span>
+              <span class="chip">
+                <span class="icon" style="background-image: var(--xml-icon);"></span>
+                XML
+              </span>
+            </div>
+            <div class="actions">
+              <a class="btn" href="https://github.com/VicentMY/AemetFX" target="_blank">
+                <span class="icon" style="background-image: var(--github-icon);"></span>
+                Código
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto 2 -->
+        <article class="card">
+          <div class="card-media">
+            <img src="img/calculadora-fx-(preview).webp" alt="Calculadora FX app preview">
+          </div>
+          <div class="card-body">
+            <h3>Calculadora FX</h3>
+            <p>Calculadora simple hecha con JavaFx. Cuenta con modo oscuro.</p>
+            <div class="chips" aria-label="Tecnologías usadas">
+              <span class="chip">
+                <span class="icon" style="background-image: var(--java-icon);"></span>
+                Java
+              </span>
+              <span class="chip">
+                <span class="icon" style="background-image: var(--xml-icon);"></span>
+                XML
+              </span>
+            </div>
+            <div class="actions">
+              <a class="btn" href="https://github.com/VicentMY/CalculadoraFX" target="_blank">
+                <span class="icon" style="background-image: var(--github-icon);"></span>
+                Código
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto 3 -->
+        <article class="card">
+          <div class="card-media">
+            <img src="img/mymusicapp-(preview).webp" alt="MyMusicApp app preview">
+          </div>
+          <div class="card-body">
+            <h3>MyMusicApp</h3>
+            <p>Aplicación de música simple para reproducir canciones en MP3. Cuenta con un chat global con Firebase para que los usuarios puedan conversar.</p>
+            <div class="chips" aria-label="Tecnologías usadas">
+              <span class="chip">
+                <span class="icon" style="background-image: var(--kotlin-icon);"></span>
+                Kotlin
+              </span>
+              <span class="chip">
+                <span class="icon" style="background-image: var(--firebase-icon);"></span>
+                Firebase
+              </span>
+            </div>
+            <div class="actions">
+              <a class="btn" href="https://github.com/VicentMY/MyMusicApp" target="_blank">
+                <span class="icon" style="background-image: var(--github-icon);"></span>
+                Código
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto 4 -->
+        <article class="card">
+          <div class="card-media">
+            <img src="img/porfolio-web.webp" alt="">
+          </div>
+          <div class="card-body">
+            <h3>Mi Porfolio Web</h3>
+            <p>Porfolio web para darme a conocer. Realizado con HTML, CSS y javascript puro, sin frameworks.</p>
+            <div class="chips" aria-label="Tecnologías usadas">
+              <span class="chip">
+                <span class="icon" style="background-image: var(--html-icon);"></span>
+                HTML
+              </span>
+              <span class="chip">
+                <span class="icon" style="background-image: var(--css-icon);"></span>
+                CSS
+              </span>
+              <span class="chip">
+                <span class="icon" style="background-image: var(--javascript-icon);"></span>
+                Javascript
+              </span>
+            </div>
+            <div class="actions">
+              <a class="btn" href="https://github.com/VicentMY/portfolio" target="_blank">
+                <span class="icon" style="background-image: var(--github-icon);"></span>
+                Código
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto 5 -->
+        <article class="card">
+          <div class="card-media">
+            <img src="img/corre-cristia-preview.webp" alt="Corre Cristià game preview">
+          </div>
+          <div class="card-body">
+            <h3>Corre Cristià!</h3>
+            <p>Juego desarrolado en Python con temàtica de "Moros i cristians", festividad de la Comunitat Valenciana.</p>
+            <div class="chips" aria-label="Tecnologías usadas">
+              <span class="chip">
+                <span class="icon" style="background-image: var(--python-icon);"></span>
+                Python
+              </span>
+            </div>
+            <div class="actions">
+              <a class="btn" href="https://github.com/VicentMY/Corre_Cristia" target="_blank">
+                <span class="icon" style="background-image: var(--github-icon);"></span>
+                Código
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Proyecto 6 -->
+        <article class="card">
+          <div class="card-media">
+            <img src="img/buscaminas-por-consola-(preview).webp" alt="Buscaminas game preview">
+          </div>
+          <div class="card-body">
+            <h3>Buscaminas por consola</h3>
+            <p>El clásico juego de Buscaminas pero para jugar por terminal, realizado con Java.</p>
+            <div class="chips" aria-label="Tecnologías usadas">
+              <span class="chip">
+                <span class="icon" style="background-image: var(--java-icon);"></span>
+                Java
+              </span>
+            </div>
+            <div class="actions">
+              <a class="btn" href="https://github.com/VicentMY/BuscaMinas" target="_blank">
+                <span class="icon" style="background-image: var(--github-icon);"></span>
+                Código
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Experiencia ===== -->
+  <section id="experiencia">
+    <div class="container">
+      <h2 class="section-title">Experiencia</h2>
+      <p class="section-lead">Incluye prácticas, proyectos académicos y contribuciones.</p>
+      <div class="timeline">
+        <div class="item">
+          <h3>Desarrollador de software</h3>
+          <strong>Magna Seating (Almussafes)</strong>
+          <span>Mar 2025 - May 2025</span>
+          <p>He desarrolado un script de Python para recopilar datos de producción por semanas o días automáticamente y facilitar las tareas del departamento de calidad.</p>
+        </div>
+        <div class="item">
+          <h3>Estudiante de DAM</h3>
+          <strong>IES Sant Vicent Ferrer (Algemesí)</strong>
+          <span>Sep 2023 - Feb 2025</span>
+          <p>Estudiante de Formación Profesional de Grado Superior en Desarrollo de Aplicaciones Multiplataforma.</p>
+        </div>
+        <div class="item">
+          <h3>Asistente SEO (FCT)</h3>
+          <strong>Naiara Alonso (Valencia)</strong>
+          <span>Mar 2023 - Jun 2023</span>
+          <p>Gestión del contenido de páginas web con Wordpress, redes sociales y SEO.</p>
+        </div>
+        <div class="item">
+          <h3>Estudiante de SMR</h3>
+          <strong>IES Sant Vicent Ferrer (Algemesí)</strong>
+          <span>Sep 2021 - Mar 2023</span>
+          <p>Estudiante de Formación Profesional de Grado Medio en Sistemas Microinformàticos y Redes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Tecnologías ===== -->
+  <section id="tecnologias">
+    <div class="container">
+      <h2 class="section-title">Tecnologías</h2>
+      <div class="tech-grid">
+        <div class="card tech-card">
+          <h4>Frontend</h4>
+          <div class="chips">
+            <span class="chip">
+              <span class="icon" style="background-image: var(--html-icon);"></span>
+              HTML
+            </span>
+            <span class="chip">
+              <span class="icon" style="background-image: var(--css-icon);"></span>
+              CSS
+            </span>
+            <span class="chip">
+              <span class="icon" style="background-image: var(--javascript-icon);"></span>
+              JavaScript
+            </span>
+            <span class="chip">
+              <span class="icon" style="background-image: var(--qt-icon);"></span>
+              QT
+            </span>
+          </div>
+        </div>
+        <div class="card tech-card">
+          <h4>Backend</h4>
+          <div class="chips">
+            <span class="chip">
+              <span class="icon" style="background-image: var(--java-icon);"></span>
+              Java
+            </span>
+            <span class="chip">
+              <span class="icon" style="background-image: var(--python-icon);"></span>
+              Python
+            </span>
+            <span class="chip">
+              <span class="icon" style="background-image: var(--kotlin-icon);"></span>
+              Kotlin
+            </span>
+          </div>
+        </div>
+        <div class="card tech-card">
+          <h4>Bases de datos</h4>
+          <div class="chips">
+            <span class="chip">
+              <span class="icon" style="background-image: var(--postgresql-icon);"></span>
+              PostgreSQL
+            </span>
+            <span class="chip">
+              <span class="icon" style="background-image: var(--mysql-icon);"></span>
+              MySQL
+            </span>
+          </div>
+        </div>
+        <div class="card tech-card">
+          <h4>Herramientas</h4>
+          <div class="chips">
+            <span class="chip">
+              <span class="icon" style="background-image: var(--github-brand-icon);"></span>
+              GitHub
+            </span>
+            <span class="chip">
+              <span class="icon" style="background-image: var(--git-icon);"></span>
+              Git
+            </span>
+            <span class="chip">
+              <span class="icon" style="background-image: var(--vscode-icon);"></span>
+              VS Code
+            </span>
+            <span class="chip">
+              <span class="icon" style="background-image: var(--intellij-icon);"></span>
+              Intelli J IDEA
+            </span>
+            <span class="chip">
+              <span class="icon" style="background-image: var(--androidstudio-icon);"></span>
+              Android Studio
+            </span>
+            <span class="chip">
+              <span class="icon" style="background-image: var(--postman-icon);"></span>
+              Postman
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contacto ===== -->
+  <section id="contacto">
+    <div class="container">
+      <h2 class="section-title">Contacto</h2>
+      <div class="contact">
+        <span class="pill" aria-hidden="true">¿Hablamos?</span>
+        <span>Escribeme a</span>
+        <a href="mailto:vicent.m.yerves@outlook.es">vicent.m.yerves@outlook.es</a>
+        <!-- <span> o conecta por <a href="#">LinkedIn</a>.</span> --> <!-- EN UN FUTURO PRÓXIMO -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="container">
+      © <span id="year"></span> Vicent Martínez (VicentMY) · Hecho con HTML y CSS
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

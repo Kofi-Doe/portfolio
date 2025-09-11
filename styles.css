@@ -1,0 +1,491 @@
+/* ===== Variables ===== */
+:root {
+    --bg: #0b0f17;
+    --bg-soft: #111827;
+    --header-bg: rgba(0, 0, 0, 0.2);
+    --card: #0f172a;
+    --chip: #0b0f17;
+    --chip-bg: linear-gradient(135deg, var(--brand), var(--brand-2));
+    --highlight-20: rgba(255, 255, 255, 0.2);
+    --highlight-10: rgba(255, 255, 255, 0.1);
+    --highlight-01: rgba(255, 255, 255, 0.01);
+    --text: #e5e7eb;
+    --muted: #94a3b8;
+    --brand: #60a5fa;
+    --brand-2: #34d399;
+    --shadow: 0 10px 25px rgba(0, 0, 0, .35);
+    --radius: 16px;
+    --maxw: 1100px;
+    /* Iconos */
+    --pdf-icon: url(icon/svg/pdf-black.svg);
+    --github-icon: url(icon/svg/github-white.svg);
+    --theme-icon: url(icon/svg/sun-white.svg);
+    --menu-icon: url(icon/svg/menu-white.svg);
+    --close-icon: url(icon/svg/close-white.svg);
+    /* Chips */
+    --html-icon: url(icon/svg/html5-black.svg);
+    --css-icon: url(icon/svg/css3-black.svg);
+    --xml-icon: url(icon/svg/xml-black.svg);
+    --javascript-icon: url(icon/svg/javascript-black.svg);
+    --qt-icon: url(icon/svg/qt-black.svg);
+    --java-icon: url(icon/svg/java-black.svg);
+    --python-icon: url(icon/svg/python-black.svg);
+    --kotlin-icon: url(icon/svg/kotlin-black.svg);
+    --firebase-icon: url(icon/svg/firebase-black.svg);
+    --postgresql-icon: url(icon/svg/postgresql-black.svg);
+    --mysql-icon: url(icon/svg/mysql-black.svg);
+    --github-brand-icon: url(icon/svg/github-black.svg);
+    --git-icon: url(icon/svg/git-black.svg);
+    --vscode-icon: url(icon/svg/vscode-black.svg);
+    --intellij-icon: url(icon/svg/intellij-black.svg);
+    --androidstudio-icon: url(icon/svg/androidstudio-black.svg);
+    --postman-icon: url(icon/svg/postman-black.svg);
+}
+
+/* Tema claro */
+[data-theme="light"] {
+    --bg: #f9fafb;
+    --bg-soft: #f3f4f6;
+    --header-bg: rgba(255, 255, 255, 0.2);
+    --card: #ffffff;
+    --chip: #ffffff;
+    --highlight-20: rgba(0, 0, 0, 0.2);
+    --highlight-10: rgba(0, 0, 0, 0.10);
+    --highlight-01: rgba(0, 0, 0, 0.20);
+    --text: #1f2937;
+    --muted: #6b7280;
+    --brand: #2563eb;
+    --brand-2: #059669;
+    --shadow: 0 4px 12px rgba(0, 0, 0, .08);
+    /* Iconos */
+    --pdf-icon: url(icon/svg/pdf-white.svg);
+    --github-icon: url(icon/svg/github-black.svg);
+    --theme-icon: url(icon/svg/moon-black.svg);
+    --menu-icon: url(icon/svg/menu-black.svg);
+    --close-icon: url(icon/svg/close-black.svg);
+    /* Chips */
+    --html-icon: url(icon/svg/html5-white.svg);
+    --css-icon: url(icon/svg/css3-white.svg);
+    --xml-icon: url(icon/svg/xml-white.svg);
+    --javascript-icon: url(icon/svg/javascript-white.svg);
+    --qt-icon: url(icon/svg/qt-white.svg);
+    --java-icon: url(icon/svg/java-white.svg);
+    --python-icon: url(icon/svg/python-white.svg);
+    --kotlin-icon: url(icon/svg/kotlin-white.svg);
+    --firebase-icon: url(icon/svg/firebase-white.svg);
+    --postgresql-icon: url(icon/svg/postgresql-white.svg);
+    --mysql-icon: url(icon/svg/mysql-white.svg);
+    --github-brand-icon: url(icon/svg/github-white.svg);
+    --git-icon: url(icon/svg/git-white.svg);
+    --vscode-icon: url(icon/svg/vscode-white.svg);
+    --intellij-icon: url(icon/svg/intellij-white.svg);
+    --androidstudio-icon: url(icon/svg/androidstudio-white.svg);
+    --postman-icon: url(icon/svg/postman-white.svg);
+}
+
+/* ===== Estilo básico ===== */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Alexandria';
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    transition: background 0.3s, color 0.3s;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===== Header / Navbar ===== */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    backdrop-filter: saturate(140%) blur(10px);
+    background: var(--header-bg);
+    border-bottom: 1px solid var(--highlight-20);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 16px;
+    padding: 14px 0;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.avatar {
+    flex-shrink: 0;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: var(--chip-bg);
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+    color: var(--chip);
+    box-shadow: var(--shadow);
+}
+
+.title {
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+#nav-menu ul {
+    display: flex;
+    gap: 14px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+#nav-menu a {
+    padding: 8px 12px;
+    border-radius: 10px;
+    color: var(--muted);
+}
+
+#nav-menu a:hover {
+    background: var(--highlight-10);
+    color: var(--text);
+}
+
+.btn {
+    border: 1px solid var(--highlight-01);
+    padding: 10px 14px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(180deg, var(--highlight-10), var(--highlight-01));
+    box-shadow: var(--shadow);
+    cursor: pointer;
+}
+
+.btn--primary {
+    border-color: transparent;
+    background: var(--chip-bg);
+    color: var(--chip);
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+/* ===== Hero ===== */
+.hero {
+    padding: 42px 0 24px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    color: var(--muted);
+    border: 1px dashed var(--highlight-20);
+}
+
+.hero h1 {
+    font-size: clamp(28px, 4vw, 40px);
+    line-height: 1.2;
+    margin: 12px 0 10px;
+}
+
+.hero p {
+    color: var(--muted);
+    max-width: 70ch;
+    margin: 0;
+}
+
+.hero img {
+    height: auto;
+    width: 200px;
+    border-radius: 50%;
+    float: right;
+}
+
+/* ===== Secciones ===== */
+section {
+    padding: 42px 0;
+}
+
+.section-title {
+    font-size: 22px;
+    margin: 0 0 16px;
+}
+
+.section-lead {
+    color: var(--muted);
+    margin: -6px 0 22px;
+}
+
+/* ===== Tarjetas de proyectos ===== */
+.grid {
+    display: grid;
+    gap: 18px;
+    align-items: stretch;
+}
+
+@media(min-width: 700px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(min-width: 1000px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background: var(--card);
+    border: 1px solid var(--highlight-01);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.card-media {
+    background: var(--bg-soft);
+    display: grid;
+    place-items: center;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.card-media img {
+    max-width: 350px;
+    max-height: 200px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 14px;
+    flex: 1;
+}
+
+.card h3 {
+    margin: 0 0 8px;
+    font-size: 18px;
+}
+
+.card p {
+    margin: 0 0 12px;
+    color: var(--muted);
+}
+
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: auto;
+}
+
+.chip {
+    background: var(--chip-bg);
+    padding: 6px 10px;
+    border-radius: 999px;
+    border: 1px solid var(--highlight-10);
+    font-size: 12px;
+    color: var(--chip);
+    display: inline-flex;
+}
+
+.chip span {
+    margin-right: 5px;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.icon {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+}
+
+/* ===== Experiencia ===== */
+.timeline {
+    display: grid;
+    gap: 12px;
+}
+
+.item {
+    background: var(--card);
+    border: 1px solid var(--highlight-01);
+    border-radius: 12px;
+    padding: 14px;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s;
+}
+
+.item:hover {
+    transform: translateY(-4px);
+}
+
+.item h3 {
+    display: block;
+    margin: 0;
+    color: var(--brand);
+}
+
+.item strong {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.item span {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* ===== Tecnologías ===== */
+.tech-grid {
+    display: grid;
+    gap: 14px;
+    align-items: stretch;
+}
+
+@media(min-width: 800px) {
+    .tech-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.tech-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 12px;
+    padding: 14px;
+}
+
+.tech-card .chips {
+    margin-bottom: auto;
+}
+
+.tech-card h4 {
+    margin: 0 0 10px;
+}
+
+/* ===== Contacto y Footer ===== */
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+}
+
+.contact a {
+    color: var(--brand);
+}
+
+footer {
+    padding: 32px;
+    color: var(--muted);
+    border-top: 1px solid var(--highlight-20);
+}
+
+/* ===== Utilidades ===== */
+.pill {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 999px;
+    border: 1px dashed var(--highlight-20);
+    font-size: 12px;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    display: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+/* Responsiveness */
+@media(max-width: 500px) {
+    .hero img {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+    }
+}
+
+@media(max-width: 700px) {
+    .nav-toggle-label {
+        display: block;
+    }
+
+    #nav-menu {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 150px;
+        background: var(--bg);
+        border: 1px solid var(--highlight-10);
+        border-radius: 8px;
+        padding: 12px;
+        box-shadow: var(--shadow);
+    }
+
+    .menu-icon {
+        background-image: var(--menu-icon);
+    }
+
+    #nav-toggle:checked~#nav-menu {
+        display: block;
+    }
+
+
+    #nav-menu ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+}

